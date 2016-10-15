@@ -63,11 +63,11 @@ PlatformerGame.Game.prototype = {
         //setSize(width, height, offsetX, offsetY)
         this.star.body.setSize(9, 9, 3, 5);
         this.star.dangerous = true;
-
+*/
         this.music = this.game.add.audio('music');
         this.music.loop = true;
         this.music.play();
-*/
+
         //  The score
         this.scoreText = this.game.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#000' });
         //this.scoreText.fixedToCamera = true;

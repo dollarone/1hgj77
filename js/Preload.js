@@ -20,7 +20,7 @@ PlatformerGame.Preload.prototype = {
     this.game.load.image('igloo', 'assets/images/igloo.png');
     this.game.load.image('gamejam', 'assets/images/onehourgamejamlogo.png');
     this.game.load.audio('splash', 'assets/audio/onehourgamejamsplash.ogg');
-    this.game.load.audio('music', 'assets/audio/music.ogg');
+    this.game.load.audio('music', 'assets/audio/penguins.ogg');
     this.game.load.audio('dollarone_productions', 'assets/audio/dollarone_productions.ogg');
 
   },
