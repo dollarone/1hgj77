@@ -382,7 +382,7 @@ PlatformerGame.Game.prototype = {
 
     update: function() {
 
-        if (this.level === 1) {
+        if (this.level === "fun1") {
             if (this.timer > 100 && this.timer < 400) {
                 this.helptext.visible = true;
             }
