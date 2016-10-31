@@ -276,6 +276,8 @@ PlatformerGame.Game.prototype = {
 
     onTap : function (pointer, doubleTap) {
 
+        doubleTap = true;
+
         if( this.game.input.y > 400) {
             return;
         }
@@ -387,7 +389,7 @@ PlatformerGame.Game.prototype = {
                 this.helptext.visible = true;
             }
             if (this.timer === 400) {
-                this.helptext.text = 'Then doubleclick to perform that action';
+                this.helptext.text = 'Then click to perform that action';
             }
             if (this.timer === 800) {
                 this.helptext.text = 'Actions are "Break Block", "Create Block", "Create Jump Block"\n(plus "Restart" and "Main Menu")';
