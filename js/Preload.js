@@ -20,6 +20,7 @@ PlatformerGame.Preload.prototype = {
     this.load.tilemap('fun4', 'assets/tilemaps/fun4.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.tilemap('fun5', 'assets/tilemaps/fun5.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.tilemap('fun6', 'assets/tilemaps/fun6.json', null, Phaser.Tilemap.TILED_JSON);
+    this.load.tilemap('fun7', 'assets/tilemaps/fun7.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.tilemap('tricky1', 'assets/tilemaps/tricky1.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.tilemap('tricky2', 'assets/tilemaps/tricky2.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.tilemap('tricky3', 'assets/tilemaps/tricky3.json', null, Phaser.Tilemap.TILED_JSON);

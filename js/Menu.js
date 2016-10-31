@@ -74,9 +74,10 @@ PlatformerGame.Menu.prototype = {
         this.fun5text = this.game.add.text(80+20*5+5, 230, '5', { fontSize: '14px', fill: '#000' });
         this.fun6_frame = this.game.add.sprite(80+20*6, 230, 'frame');
         this.fun6text = this.game.add.text(80+20*6+5, 230, '6', { fontSize: '14px', fill: '#000' });
+
+        this.fun7_frame = this.game.add.sprite(80+20*7, 230, 'frame');
+        this.fun7text = this.game.add.text(80+20*7+5, 230, '7', { fontSize: '14px', fill: '#000' });
 /*
-        this.tricky1_frame = this.game.add.sprite(80+20*7, 210, 'frame');
-        this.tricky1text = this.game.add.text(80+20*7+5, 210, '7', { fontSize: '14px', fill: '#000' });
         this.tricky2_frame = this.game.add.sprite(80+20*8, 210, 'frame');
         this.tricky2text = this.game.add.text(80+20*8+5, 210, '8', { fontSize: '14px', fill: '#000' });
 
@@ -114,6 +115,7 @@ PlatformerGame.Menu.prototype = {
         this.fun4_frame.inputEnabled = true;
         this.fun5_frame.inputEnabled = true;
         this.fun6_frame.inputEnabled = true;
+        this.fun7_frame.inputEnabled = true;
         this.tricky1_frame.inputEnabled = true;
         this.tricky2_frame.inputEnabled = true;
         this.tricky3_frame.inputEnabled = true;
@@ -127,6 +129,7 @@ PlatformerGame.Menu.prototype = {
         this.fun4_frame.events.onInputDown.add(function() { this.select_level("fun4"); }, this);
         this.fun5_frame.events.onInputDown.add(function() { this.select_level("fun5"); }, this);
         this.fun6_frame.events.onInputDown.add(function() { this.select_level("fun6"); }, this);
+        this.fun7_frame.events.onInputDown.add(function() { this.select_level("fun7"); }, this);
         this.tricky1_frame.events.onInputDown.add(function() { this.select_level("tricky1"); }, this);
         this.tricky2_frame.events.onInputDown.add(function() { this.select_level("tricky2"); }, this);
         this.tricky3_frame.events.onInputDown.add(function() { this.select_level("tricky3"); }, this);
@@ -155,6 +158,7 @@ PlatformerGame.Menu.prototype = {
           this.fun4_frame.frame = 0;
           this.fun5_frame.frame = 0;
           this.fun6_frame.frame = 0;
+          this.fun7_frame.frame = 0;
           this.tricky1_frame.frame = 0;
           this.tricky2_frame.frame = 0;
           this.tricky3_frame.frame = 0;
@@ -179,6 +183,9 @@ PlatformerGame.Menu.prototype = {
          }
          else if (action === "fun6") {
             this.fun6_frame.frame = 1;
+         }
+         else if (action === "fun7") {
+            this.fun7_frame.frame = 1;
          }
          else if (action === "tricky1") {
             this.tricky1_frame.frame = 1;
