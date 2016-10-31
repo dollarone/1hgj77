@@ -20,7 +20,7 @@ PlatformerGame.Boot.prototype = {
     this.scale.pageAlignHorizontally = true;
     this.scale.pageAlignVertically = true;
 
-     this.game.stage.smoothed = false;
+    this.game.stage.smoothed = false;
     this.game.smoothed = false;
     this.game.antialias = false;
     //physics system

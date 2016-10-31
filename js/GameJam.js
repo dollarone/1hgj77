@@ -11,6 +11,7 @@ PlatformerGame.GameJam.prototype = {
   create: function() {
 
     //Change the background colour
+    this.game.add.sprite(0, 0, 'sky');
 
     var yam = this.game.add.sprite(this.game.width/2, this.game.height/2, 'gamejam');
     yam.anchor.setTo(0.5);
@@ -30,7 +31,7 @@ PlatformerGame.GameJam.prototype = {
   skip : function() {
     if (!this.pressed) {
         this.pressed = true;
-        this.state.start('Game');
+        this.state.start('Menu');
     }
   },
 
@@ -38,12 +39,8 @@ PlatformerGame.GameJam.prototype = {
     if (this.startTime < this.game.time.now - 5000 && !this.pressed) {
 
         this.pressed = true;
-        this.state.start('Game');
+        this.state.start('Menu');
     }
   },
 
-  createTile : function(x, y, frame) {
-    ledge = this.platforms.create(x, y, 'logo-tiles');
-    ledge.frame = frame;
-  },
 };

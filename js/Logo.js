@@ -11,7 +11,8 @@ PlatformerGame.Logo.prototype = {
   create: function() {
 
     //Change the background colour
-    this.game.stage.backgroundColor = this.colour;
+    
+    this.game.add.sprite(0, 0, 'sky');
 
     this.platforms = this.game.add.group();
 
@@ -19,7 +20,7 @@ PlatformerGame.Logo.prototype = {
     this.mus.play();
 
     logo_top_x = 5;
-    logo_top_y = 110;
+    logo_top_y = 130;
     tile_space = 17;
 
     this.createTile(logo_top_x+tile_space*4, logo_top_y+tile_space*0, 2);
